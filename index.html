@@ -16,7 +16,8 @@
       padding:0;
       margin:0;
       <!--      font-family: 'Nunito', sans-serif;-->
-      font-family: "Avenir LT W01 35 Light";
+<!--      font-family: "Avenir LT W01 35 Light";-->
+      font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   }
   
   .hide {
@@ -122,6 +123,31 @@
       display:none !important;
   }
   
+  .js-video {
+      height: 0;
+      padding-top: 25px;
+      padding-bottom: 67.5%;
+      margin-bottom: 10px;
+      position: relative;
+      overflow: hidden;
+  }
+  
+  .js-video.widescreen {
+      padding-bottom: 56.34%;
+  }
+  
+  .js-video.vimeo {
+      padding-top: 0;
+  }
+  
+  .js-video embed, .js-video iframe, .js-video object, .js-video video {
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      position: absolute;
+  }
+  
   #skrollr-body {
       height:100%;
       overflow:visible;
@@ -158,8 +184,12 @@
       height:100%;
   }
   
+  .upcomingevents {
+      height:50%;
+  }
+  
   .done {
-      height:55%;
+      height:15%;
   }
   </style>
 
@@ -229,33 +259,43 @@
 
 
     <div id="skrollr-body">
-        <div class="header hide" id="head">
-        </div>
+        <div class="header hide" id="head"></div>
+        
         <div class="gap gap-100" style="background-image:url(img/HLHpage.png);">
             <center>
                 <img src="img/KT - W1 HL Text.png" alt="our picture" style="max-width:70%; height:auto; position:relative; top: 450px; margin-left:auto; margin-right:auto margin-top:50px" align="middle">
             </center>
         </div>
-        <div class="content content-full bacons" id="about-us" style="background-image:url('img/KT - W2 Background Red Logo.png')">
-            <div class="container">
-                <h2>About us</hr><br>
-<!--                <img src="img/logoback.png" alt="our picture" style="width:700px;height:700px; position: absolute; left:-300px; top: 750px">-->
-            </div>
+        
+        <div class="content content-full bacons" id="about-us" style="background-image:url('img/KT - W2 Background Red Logo.png');background-repeat: no-repeat;">
+            <center><img src="img/KT - W2 About Us Text.png" alt="upcoming events" style="max-width:30%;min-width:250px;height:auto;" class="center-block">
+            test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test 
+<!--            <div class="embed-responsive embed-responsive-4by3">-->
+<!--                <iframe width="50%" height="50%" class="embed-responsive-item" src="https://www.youtube.com/embed/1guf2LW0kRU"></iframe>-->
+<!--            </div>-->
+<!--            <div class="js-video [vimeo, widescreen]">-->
+<!--                <iframe width="560" height="315" src="https://www.youtube.com/embed/1guf2LW0kRU" frameborder="0" allowfullscreen></iframe>-->
+<!--            </div>-->
+            <br>
+            <video width="500" height="300" controls>
+                <source src="vid/KT - W2 About Us Video.mp4" type="video/mp4">
+                <source src="vid/KT - W2 About Us Video.webm" type="video/webm">
+                <source src="vid/KT - W2 About Us Video.ogg" type="video/ogg">
+                Your browser does not support the video tag.
+            </video></center>
         </div>
+        
         <div class="gap gap-50" style="background-image:url(img/welcoming.jpg);"></div>
-        <div class="content done muted" id="events">
+        
+        <div class="upcomingevents" id="events">
             <div class="container">
-                <div class="container">
-                    <div class="col-md-12">
-                        <center><img src="img/KT - W3 UE Text.png" alt="upcoming events" style="max-width:60%;min-width:380px;height:auto;" class="center-block"></center>
-                    </div>
-                </div>
+                <center><img src="img/KT - W3 UE Text.png" alt="upcoming events" style="max-width:60%;min-width:380px;height:auto;" class="center-block"></center>
                 <div class="col-sm-4">
                     <div class="row">
                         <img src="img/cg.jpg" alt="Welcoming" style="max-width:80%;height:auto;" class="center-block">
                     </div>
                     <div class="row">
-                        <div style="position:relative;left:10%">Care Group</div>
+                        <div style="position:relative;left:10%; font-size:160%">Care Group</div><br>
                     </div>
                 </div>
                 <div class="col-sm-4">
@@ -263,7 +303,7 @@
                         <img src="img/service.jpg" alt="Welcoming" style="max-width:80%;height:auto;" class="center-block">
                             </div>
                     <div class="row">
-                        <div style="position:relative;left:10%">Sunday Service</div>
+                        <div style="position:relative;left:10%;font-size:160%">Sunday Service</div><br>
                     </div>
                 </div>
                 <div class="col-sm-4">
@@ -271,15 +311,23 @@
                         <img src="img/pm.jpg" alt="Welcoming" style="max-width:80%;height:auto;" class="center-block">
                             </div>
                     <div class="row">
-                        <div style="position:relative;left:10%">Prayer Meeting</div>
+                        <div style="position:relative;left:10%;font-size:160%">Prayer Meeting</div><br>
                     </div>
                 </div>
-                <div style="margin:20px"> Footer for credit</div>
             </div>
+            <br><br><br><br>
+            <footer class="content done navbar-inverse muted col-sm-12" id="events" style="background-color:gray">
+                <center>
+                    <img src="img/facebook.png" alt="Welcoming" style="min-width:35px;max-width:4%;height:auto;top:-7;position:relative">
+                    <img src="img/instagram.jpg" alt="Welcoming" style="min-width:35px;max-width:4%;height:auto;top:-7;position:relative">
+                    </center>
+            </footer>
+
         </div>
+        
     </div>
     
-
+    
 
     <!-- Bootstrap core JavaScript
     ================================================== -->
@@ -295,4 +343,5 @@
     </script>
   
 </body>
+
 </html>
