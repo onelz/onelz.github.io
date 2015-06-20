@@ -445,19 +445,27 @@
                     </div>
                 </div>
                 <script type="text/javascript">
-                    var x = false;
+                    var changemode = false;
+                    var galleryheight = 0;
                     if(screen.width < 800)
-                    {x=false;}
+                    {
+                        //mobile
+                        changemode=false;
+                        galleryheight = window.screen.availHeight*70/100;
+                    }
                     else
-                    {x=true;}
+                    {
+                        changemode=true;
+                        galleryheight = window.screen.availHeight*110/100;
+                    }
                     $( function() {
                       $( '#gallery' ).jGallery( {
                            autostart: true,
                            autostartAtImage: 1,
                            browserHistory: true,
                            canClose: false,
-                           canChangeMode: x,
-                           height: window.screen.availHeight*70/100,
+                           canChangeMode: changemode,
+                           height: galleryheight,
                            mode: 'standard',
                            
                            slideshow: true,
