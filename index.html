@@ -198,7 +198,7 @@
            if ((x.top+200) > pagepos && (x.top+200) < scrollBottom) { // -50 so things don't overlap
                $(".magic").addClass("pindah");
                // stop scroll
-               $('body').bind('touchmove', function(e){e.preventDefault()})
+               //$('body').bind('touchmove', function(e){e.preventDefault()})
            }
            else {
                $(".magic").removeClass("pindah");
