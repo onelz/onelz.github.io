@@ -248,7 +248,7 @@
                            if ( inline("#head") && count==1) {
                            $(".ad").removeClass("hide");
                            $("body").addClass("noscroll");
-                           $(".tempat").addClass("noscroll");
+                           //$(".tempat").addClass("noscroll");
                            count--;
                            }
                            
@@ -260,7 +260,7 @@
                             if($(this).scrollTop() + $(this).innerHeight() >= this.scrollHeight) {
                              $(".ad").addClass("hide");
                              $("body").removeClass("noscroll");
-                             $(".tempat").removeClass("noscroll");
+                             //$(".tempat").removeClass("noscroll");
                             }
                             })
               });
@@ -274,7 +274,7 @@
                var pagepos = $(document).scrollTop();
                var pageheight = $(window).height();
                console.log(div,divheight,pagepos,pageheight);
-             return (div + divheight < pagepos + pageheight && div > pagepos)
+               return (div + divheight < pagepos + pageheight && div > pagepos)
            };
 
 
