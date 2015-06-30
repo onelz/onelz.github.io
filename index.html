@@ -80,7 +80,7 @@
         </div>
     </div>
     
-
+    <div class="tempat">
     <div class="blog-masthead">
         <div class="container">
             <nav class="blog-nav">
@@ -218,7 +218,7 @@
         <a href="http://getbootstrap.com/examples/blog/#">Back to top</a>
         </p>
     </footer>
-    
+    </div>
     
     <!-- Bootstrap core JavaScript
      ================================================== -->
@@ -240,6 +240,7 @@
            if ((a-101) > pagepos && (a-101) < pagepos+5) {
                $(".ad").removeClass("hide");
                $("body").addClass("noscroll");
+                           $(".tempat").addClass("noscroll");
                            console.log("1");
                 //$(".tempat").removeClass("pindah");
            }
@@ -256,6 +257,7 @@
                                 if($(this).scrollTop() + $(this).innerHeight() >= this.scrollHeight) {
                                  $(".ad").addClass("hide");
                                  $("body").removeClass("noscroll");
+                                 $(".tempat").removeClass("noscroll");
                                 }
                                 })
                   });
