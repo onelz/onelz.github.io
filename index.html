@@ -38,6 +38,7 @@
         .noscroll {
             overflow: hidden;
             overflow-x: hidden;
+            overflow-y: hidden;
         }
     
         .ad {
@@ -49,9 +50,9 @@
             overflow:scroll;
         }
     
-    .tempat {
-        z-index:-1;
-    }
+        .tempat {
+            z-index:-1;
+        }
     
         .popup{
             width:100%;
@@ -247,7 +248,6 @@
            if ((a-101) > pagepos && (a-101) < pagepos+5) {
                $(".ad").removeClass("hide");
                $("body").addClass("noscroll");
-               $("html").addClass("noscroll");
                $(".tempat").addClass("noscroll");
                console.log("1");
                 //$(".tempat").removeClass("pindah");
