@@ -240,18 +240,18 @@
     <script src="./Blog Template for Bootstrap_files/ie10-viewport-bug-workaround.js"></script>
     
     <script>
+        var count = 1;
         $(document).scroll(function () {
            var pagepos = $(document).scrollTop()+100;
            var scrollBottom = $(window).scrollTop() + $(window).height()-200;
            var x = $("#myDiv").position();
                            var a = 1000;
-                           console.log(pagepos,scrollBottom,x.top);
            
-           if ((a-101) > pagepos && (a-101) < pagepos+100) {
+           if ((a-101) < pagepos && count==1) {
                $(".ad").removeClass("hide");
                $("body").addClass("noscroll");
                $(".tempat").addClass("noscroll");
-               console.log("1");
+                count--;
                 //$(".tempat").removeClass("pindah");
            }
            else {
