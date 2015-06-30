@@ -123,7 +123,7 @@
                         <p>Curabitur blandit tempus porttitor. <strong>Nullam quis risus eget urna mollis</strong> ornare vel eu leo. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
                     </blockquote>
                     <p>Etiam porta <em>sem malesuada magna</em> mollis euismod. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.</p>
-                    <h2 id="head">Heading</h2>
+                    <div id="head"><h2>Heading</h2></div>
                     <p>Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
                     
                     
@@ -242,11 +242,10 @@
     <script src="./Blog Template for Bootstrap_files/docs.min.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="./Blog Template for Bootstrap_files/ie10-viewport-bug-workaround.js"></script>
-    <script src="jquery.waypoints.min.js"></script>
     <script>
         var count = 1;
         $(document).scroll(function () {
-                           if ( $("#head").is(":visible") && count==1) {
+                           if ( inline("#head") && count==1) {
                            $(".ad").removeClass("hide");
                            $("body").addClass("noscroll");
                            $(".tempat").addClass("noscroll");
@@ -267,7 +266,16 @@
               });
            
            
-           
+           function inline(a)
+           {
+               var $div = $(a);
+               var div = $div.position().top;
+               var divheight = $div.height();
+               var pagepos = $(document).scrollTop();
+               var pageheight = $(window).height();
+               console.log(div,divheight,pagepos,pageheight);
+             return (div + divheight < pagepos + pageheight && div > pagepos)
+           };
 
 
                                       
