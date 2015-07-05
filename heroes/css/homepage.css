@@ -60,7 +60,7 @@ html, body {
     height:100% !important;
 }
 
-body {
+body, container-fluid {
     font-family:sans-serif;
 }
 
@@ -246,7 +246,7 @@ p {
     }
     
     .upcomingevents {
-        height:100%;
+        height:200%;
     }
     
     .about-us-text{

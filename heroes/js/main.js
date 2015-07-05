@@ -73,7 +73,9 @@
 						else {
 							onEndHeaderAnimation();
 						}
-                                       classie.add(header,'fadeout');
+                       classie.add(header,'fadeout');
+                       $('.container-fluid').fadeIn('slow');
+                       $('.container-fluid').removeClass('hide');
 					}
 				}, 80 );
 		};
