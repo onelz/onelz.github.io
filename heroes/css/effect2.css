@@ -167,7 +167,7 @@
 	speak: none;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
-}*/
+}
 
 .icon-bell:before {
 	content: "\e006";
@@ -179,7 +179,7 @@
 
 .icon-heart:before {
 	content: "\e024";
-}
+}*/
 
 /* Animations */
 
