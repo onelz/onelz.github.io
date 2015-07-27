@@ -7,12 +7,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
-        
-    <META http-equiv="refresh" content="0;URL=http://192.168.0.252/comdev/ronald/sociallogin/home/">
+    <script>
+        function myFunction() {
+            var len = 'http://onelz.github.io/redirect/index.html';
+            len = len.length;
+            var x = document.URL;
+            var result = x.substr(len);
+            document.getElementById("demo").innerHTML = x;
+        }
+    </script>
+    
+    <!--<META http-equiv="refresh" content="0;URL=http://192.168.0.252/comdev/ronald/sociallogin/home/">
+    -->
     <title>Redirecting..</title>
 
 </head>
 
-<body></body>
+<body>
+    <button onclick="myFunction()">Try it</button>
+    <p></p>
+</body>
 
 </html>
