@@ -14,8 +14,8 @@
             var x = document.URL;
             var result = x.substr(len);
             document.getElementById("demo").innerHTML = x;
-            console.log(x);
-            console.log(result);
+            document.getElementById("demo").innerHTML = result;
+            document.getElementById("demo").innerHTML = len;
         }
     </script>
     
@@ -27,7 +27,7 @@
 
 <body>
     <button onclick="myFunction()">Try it</button>
-    <p></p>
+    <p id="demo"></p>
 </body>
 
 </html>
