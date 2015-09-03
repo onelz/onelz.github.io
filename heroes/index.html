@@ -1,24 +1,25 @@
 <html lang="en" class="skrollr skrollr-desktop">
 <head>
+  <title>Heroes &amp; Legends</title>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
   <meta name="description" content="">
   <meta name="author" content="">
 
-
-  <title>Heroes &amp; Legends</title>
+  <link rel="stylesheet" type="text/css" href="css/index.css">
   <link href="css/bootstrap.min.css" rel="stylesheet">
   <link rel="shortcut icon" href="../favicon.ico">
+  <!-- for loader -->
   <link rel="stylesheet" type="text/css" href="css/normalize.css" />
-  <link rel="stylesheet" type="text/css" href="css/homepage.css" />
   <link rel="stylesheet" type="text/css" href="css/effect2.css" />
   <script src="js/modernizr.custom.js"></script>
+  
 </head>
 
 
 <!-- Start of Navigation Bar -->
-<div class="container-fluid hide" style="font-weight=500">
+<div class = "container-fluid hide">
   <nav class="navbar navbar-default navbar-fixed-top">
       <div class="container-fluid">
               <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -32,10 +33,10 @@
           <div class="collapse navbar-collapse" id="myNavbar">
               <ul class="nav navbar-nav navbar-right navbar-pad">
                   <li class="active"><a href="#">HOME</a></li>
-                  <li><a href="calendar.html">EVENTS</a></li>
+                  <li><a href="calendar.html">CALENDAR</a></li>
                   <li><a href="gallery.html">GALLERY</a></li>
                   <li><a href="blog.html">BLOG</a></li>
-                  <li><a href="contactus.html">CONTACT US</a></li>
+                  <li><a href="contactUs.html">CONTACT US</a></li>
               </ul>
           </div>
       </div>
@@ -46,12 +47,11 @@
 
 <body>
     
-    
     <div id="ip-container" class="ip-container">
         <header class="ip-header">
             <h1 class="ip-logo">
                 <center><img class="ip-logo" src="img/navbarlogo2.png"></img></center>
-                    </h1>
+            </h1>
             <div class="ip-loader">
                 <svg class="ip-inner" width="60px" height="60px" viewBox="0 0 80 80">
                     <path class="ip-loader-circlebg" d="M40,10C57.351,10,71,23.649,71,40.5S57.351,71,40.5,71 S10,57.351,10,40.5S23.649,10,40.5,10z"/>
@@ -59,9 +59,10 @@
                 </svg>
             </div>
         </header>
-
+        
         
         <div class="ip-main">
+    
             <div class="parallax-image-wrapper parallax-image-wrapper-100 skrollable skrollable-between"
                 data-anchor-target="#head + .gap"
                 data-bottom-top="transform:translate3d(0px, 200%, 0px)"
@@ -95,7 +96,7 @@
                 
                 <div class="gap gap-100 browser" style="background-image:url(img/HLHpage.png);">
                     <center>
-                        <img class="hllogo box" src="img/KT - W1 HL Text.png" alt="our picture" align="middle">
+                        <img class="hllogo" src="img/KT - W1 HL Text.png" alt="our picture" align="middle">
                     </center>
                 </div>
                 
@@ -108,7 +109,7 @@
                     <div>
                         <center>
                             <div class="video-container">
-                                <iframe width=560 height=315 class="embed-responsive-item" src="https://www.youtube.com/embed/1guf2LW0kRU">
+                                <iframe width=560 height=315 class="embed-responsive-item" src="https://www.youtube.com/embed/rxUcc89xeBw">
                                 </iframe>
                             </div>
                         </center>
@@ -154,13 +155,13 @@
                     </div>
                     <br>
                     
-                    <div class="done container col-sm-12" id="events" style="background-color:gray">
+                    <footer class="content done navbar-inverse muted col-sm-12" id="events" style="background-color:#E0E0E0">
                         <center>
                             <img src="img/socmed/facebook.png" alt="facebook" style="min-width:55px;max-width:4%;height:auto;top:8;position:relative">
                             <img src="img/socmed/instagram.png" alt="instagram" style="min-width:55px;max-width:4%;height:auto;top:8;position:relative">
                             <img src="img/socmed/youtube.png" alt="youtube" style="min-width:55px;max-width:4%;height:auto;top:8;position:relative">
                             </center>
-                    </div>
+                    </footer>
 
                 </div>
                 <!-- end of skrollr-body -->
@@ -168,8 +169,9 @@
             <!-- end of ip-main -->
         </div>
         <!-- end of ip-container -->
-     </div>
-    
+    </div>
+
+
 
     <!-- Bootstrap core JavaScript
     ================================================== -->
@@ -184,6 +186,8 @@
     });
     </script>
     
+    
+    <!--  for loader  -->
     <script src="js/classie.js"></script>
     <script src="js/pathLoader.js"></script>
     <script src="js/main.js"></script>
