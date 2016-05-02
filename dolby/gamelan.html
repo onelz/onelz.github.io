@@ -1,0 +1,29 @@
+<html>
+<header>
+
+</header>
+
+<body style="margin:0;padding:0;">
+	<img src="batik.jpg" style="position:absolute;width:100%;height:100%;margin:0;padding:0;">
+	<div id="" style="position:absolute;width:100%;height:100%;text-align:center;">
+	    <img src="gamelan2.jpg" style="display:block;margin-left:auto;margin-right:auto;">
+	    <br>
+	    <img src="DolbyAudioLogo/DolbyAudioPlatform_white.png" style="display:block;margin-right:auto;margin-left:auto;width:300px;height:300px;"></img>
+	    <div style="font-size: 10px;margin-top:260px;margin-left:60px;" id="dolby">
+	    	<audio id="music" style="margin-left:-50px;"  loop autoplay></audio>
+	    </div>
+    </div>
+    
+</body>
+
+<script src="https://s3-us-west-1.amazonaws.com/dolbydeveloper/1.1.0/js/dolby.min.js"></script>
+ <script>
+            var audio = document.getElementById("music");
+
+            if (Dolby.checkDDPlus() === true){
+            	audio.src = 'Balinese Gamelan_Dolby.mp4';
+            }
+</script>
+
+
+</html>
